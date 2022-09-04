@@ -13,6 +13,7 @@ func main() {
 		conn, err := net.Dial("tcp", address)
 
 		if err != nil {
+			fmt.Printf("%d close\n", i)
 			continue // fail to connect
 		}
 
